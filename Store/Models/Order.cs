@@ -11,19 +11,10 @@ namespace Store.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
-    public partial class Product
+    
+    public partial class Order
     {
-        [Key]
         public int Id { get; set; }
-[Required]
-        public string Product1 { get; set; }
-        [Required]
-        public string Quantity { get; set; }
-        [DataType(DataType.Currency)]
-        public string Price { get; set; }
-        [DataType(DataType.Date)]
-        public Nullable<System.DateTime> Date { get; set; }
+        public string Customer { get; set; }
     }
 }

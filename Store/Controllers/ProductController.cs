@@ -17,7 +17,7 @@ namespace Store.Controllers
 
         public ProductController()
         {
-            _productRepository = new ProductRepository(new StoreDbEntities());
+            _productRepository = new ProductRepository(new StoreDb());
         }
 
         public ProductController(IProductRepository productRepository)

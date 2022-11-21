@@ -19,8 +19,8 @@ namespace Store.Repository
 
     public class ProductRepository: IProductRepository
     {
-        private StoreDbEntities _context;
-        public ProductRepository(StoreDbEntities context)
+        private StoreDb _context;
+        public ProductRepository(StoreDb context)
         {
             this._context = context;
         }

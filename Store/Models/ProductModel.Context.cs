@@ -13,10 +13,10 @@ namespace Store.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class StoreDbEntities : DbContext
+    public partial class StoreDb : DbContext
     {
-        public StoreDbEntities()
-            : base("name=StoreDbEntities")
+        public StoreDb()
+            : base("name=StoreDb")
         {
         }
     
