@@ -4,8 +4,8 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="StoreDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="StoreDB">
+      <Schema Namespace="StoreDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Products">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -16,25 +16,25 @@
           <Property Name="Date" Type="datetime" />
         </EntityType>
         <EntityContainer Name="StoreDbModelStoreContainer">
-          <EntitySet Name="StoreDB" EntityType="Self.StoreDB" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="StoreDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="StoreDB">
+        <EntityType Name="Product">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Product" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Product1" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="Quantity" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="Price" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="Date" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityContainer Name="StoreDbEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="StoreDBs" EntityType="Self.StoreDB" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -42,11 +42,11 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="StoreDbModelStoreContainer" CdmEntityContainer="StoreDbEntities">
-          <EntitySetMapping Name="StoreDBs">
-            <EntityTypeMapping TypeName="StoreDbModel.StoreDB">
-              <MappingFragment StoreEntitySet="StoreDB">
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="StoreDbModel.Product">
+              <MappingFragment StoreEntitySet="Products">
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Product" ColumnName="Product" />
+                <ScalarProperty Name="Product1" ColumnName="Product" />
                 <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
@@ -69,7 +69,7 @@
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="true" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
-        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>
     </Options>

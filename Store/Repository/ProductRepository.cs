@@ -9,11 +9,11 @@ namespace Store.Repository
 {
     public interface IProductRepository : IDisposable
     {
-        IEnumerable<StoreDB> GetProduct();
-        StoreDB GetProductByID(int ProductId);
-        void InsertProduct(StoreDB store);
+        IEnumerable<Product> GetProduct();
+        Product GetProductByID(int Id);
+        void InsertProduct(Product store);
         void DeleteProduct(int ProductId);
-        void UpdateProduct(StoreDB store);
+        void UpdateProduct(Product store);
         void Save();
     }
 
@@ -24,24 +24,24 @@ namespace Store.Repository
         {
             this._context = context;
         }
-        public IEnumerable<StoreDB> GetProduct()
+        public IEnumerable<Product> GetProduct()
         {
-            return _context.StoreDBs.ToList();
+            return _context.Products.ToList();
         }
-        public StoreDB GetProductByID(int ProductId)
+        public Product GetProductByID(int ProductId)
         {
-            return _context.StoreDBs.Find(ProductId);
+            return _context.Products.Find(ProductId);
         }
-        public void InsertProduct(StoreDB store)
+        public void InsertProduct(Product store)
         {
-            _context.StoreDBs.Add(store);
+            _context.Products.Add(store);
         }
         public void DeleteProduct(int ProductId)
         {
-            StoreDB store = _context.StoreDBs.Find(ProductId);
-            _context.StoreDBs.Remove(store);
+            Product store = _context.Products.Find(ProductId);
+            _context.Products.Remove(store);
         }
-        public void UpdateProduct(StoreDB store)
+        public void UpdateProduct(Product store)
         {
             _context.Entry(store).State = EntityState.Modified;
         }

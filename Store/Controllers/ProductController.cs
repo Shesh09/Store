@@ -28,22 +28,22 @@ namespace Store.Controllers
         // GET: Product
         public ActionResult Index()
         {
-            var StoreDBs = _productRepository.GetProduct();
+            var Products = _productRepository.GetProduct();
             _productRepository.Save();
                 /*from product in _productRepository.GetProduct() select product;*/
-            return View(StoreDBs);
+            return View(Products);
         }
         public ViewResult Details(int id)
         {
-            StoreDB store = _productRepository.GetProductByID(id);
+            Product store = _productRepository.GetProductByID(id);
             return View(store);
         }
         public ActionResult Create()
         {
-            return View(new StoreDB());
+            return View(new Product());
         }
         [HttpPost]
-        public ActionResult Create(StoreDB store)
+        public ActionResult Create(Product store)
         {
             try
             {
@@ -63,11 +63,11 @@ namespace Store.Controllers
         }
         public ActionResult Edit(int id)
         {
-            StoreDB store = _productRepository.GetProductByID(id);
+            Product store = _productRepository.GetProductByID(id);
             return View(store);
         }
         [HttpPost]
-        public ActionResult Edit(StoreDB store)
+        public ActionResult Edit(Product store)
         {
             try
             {
@@ -91,7 +91,7 @@ namespace Store.Controllers
             {
                 ViewBag.ErrorMessage = "Unable to save changes. Try again, and if the problem persists see your system administrator";
             }
-            StoreDB store = _productRepository.GetProductByID(id);
+            Product store = _productRepository.GetProductByID(id);
             return View(store);
         }
         [HttpPost, ActionName("Delete")]
@@ -99,7 +99,7 @@ namespace Store.Controllers
         {
             try
             {
-                StoreDB store = _productRepository.GetProductByID(id);
+                Product store = _productRepository.GetProductByID(id);
                 _productRepository.DeleteProduct(id);
                 _productRepository.Save();
             }
