@@ -15,15 +15,17 @@ namespace Store.Models
 
     public partial class Product
     {
-        [Key]
+        [Required]
         public int Id { get; set; }
-[Required]
-        public string Product1 { get; set; }
+        [Required]
+        public string ProductType { get; set; }
         [Required]
         public string Quantity { get; set; }
+        [Required]
         [DataType(DataType.Currency)]
         public string Price { get; set; }
-        [DataType(DataType.Date)]
+        [Required]
+        [DataType(DataType.DateTime)]
         public Nullable<System.DateTime> Date { get; set; }
     }
 }
