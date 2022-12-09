@@ -2281,6 +2281,9 @@
     <Content Include="homepage.aspx" />
     <Content Include="Imgs\Template2.png" />
     <Content Include="Imgs\template3.jpg" />
+    <Content Include="Imgs\template4.jpg" />
+    <Content Include="Imgs\template5.jpg" />
+    <Content Include="Imgs\template6.jpg" />
     <Content Include="MasterPage\Layouts.aspx" />
     <Content Include="Models\ProductModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
