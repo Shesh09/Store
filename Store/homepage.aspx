@@ -41,4 +41,40 @@
          </div>
       </div>
    </section>
+
+      <section>
+          <img src="Imgs/template7.jpg" class="center"/>
+    </section>
+
+    <section>
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <center>
+                  <h2>Our Process</h2>
+                  <p><b>We have a Simple 2 Step Process -</b></p>
+               </center>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+               <center>
+                  <img width="175px" src="Imgs/template8.jpg" />
+                  <h4>Sign Up</h4>
+                  <p class="text-justify">Create an account that would help you to buy or sell products on the platform</p>
+               </center>
+            </div>
+            <div class="col-md-6">
+               <center>
+                 <img width="200px" src="Imgs/template9.jpg" />
+                  <h4>Search for what you want</h4>
+                  <p class="text-justify"> Use all the features that our platform give you to find whatever you are looking for,
+                      or to sell whatever you don't use around your home</p>
+               </center>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
 </asp:Content>
