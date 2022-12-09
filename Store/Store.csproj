@@ -167,6 +167,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage\Layouts.aspx.cs">
       <DependentUpon>Layouts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2271,7 +2278,9 @@
     <Content Include="FontAwesome\fontawesome-free-6.2.1-web\svgs\solid\z.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="homepage.aspx" />
     <Content Include="Imgs\Template2.png" />
+    <Content Include="Imgs\template3.jpg" />
     <Content Include="MasterPage\Layouts.aspx" />
     <Content Include="Models\ProductModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
