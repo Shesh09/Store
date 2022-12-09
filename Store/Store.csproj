@@ -211,6 +211,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Css\CustomStyleSheet.css" />
     <Content Include="DataTables\Css\jquery.dataTables.min.css" />
     <Content Include="DataTables\JS\jquery.dataTables.min.js" />
     <Content Include="favicon.ico" />
