@@ -10,7 +10,7 @@
 
 namespace Store
 {
-    public partial class homepage
+    public partial class HomePage
     {
     }
 }
