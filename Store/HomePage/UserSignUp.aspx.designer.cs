@@ -8,9 +8,9 @@
 //------------------------------------------------------------------------------
 
 
-namespace Store.HomePage
+namespace Store
 {
-    public partial class HomePage
+    public partial class UserSignUp
     {
     }
 }

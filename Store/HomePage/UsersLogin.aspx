@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/WebMasterSite.Master" AutoEventWireup="true" CodeBehind="AdminLogin.aspx.cs" Inherits="Store.AdminLogin" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/WebMasterSite.Master" AutoEventWireup="true" CodeBehind="UsersLogin.aspx.cs" Inherits="Store.HomePage.UsersLogin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
+     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="card">
@@ -46,13 +46,13 @@
                                      ID="Button1" runat="server" Text="Login" />
                             </div>
                             <div class="form-group">
-                                <input class="btn btn-info btn-block btn-lg" style="width:100%"
-                                    ID="Button2" type="button" value="Sign Up" />
+                                <a href="UserSignUp.aspx"><input class="btn btn-info btn-block btn-lg" style="width:100%"
+                                    ID="Button2" type="button" value="Sign Up" /></a>
                             </div>
                         </div>
                     </div>
                     </div>
-                    <a href="HomePage.aspx">Back to Home</a>
+                    <a href="HomePage.aspx">Back to Home</a><br>
                    
                 </div>
             </div>

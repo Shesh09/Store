@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Store
+namespace Store.HomePage
 {
 
 
-    public partial class AdminLogin
+    public partial class UsersLogin
     {
 
         /// <summary>
