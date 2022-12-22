@@ -43,11 +43,11 @@
                             </div>
                              <div class="form-group">
                                  <asp:Button class="btn btn-success btn-block btn-lg" style="width:100%"
-                                     ID="Button1" runat="server" Text="Login" />
+                                     ID="Button1" runat="server" Text="Login" /><br />
                             </div>
                             <div class="form-group">
                                 <a href="UserSignUp.aspx"><input class="btn btn-info btn-block btn-lg" style="width:100%"
-                                    ID="Button2" type="button" value="Sign Up" /></a>
+                                    ID="Button2" type="button" value="Sign Up" /></a><br />
                             </div>
                         </div>
                     </div>
