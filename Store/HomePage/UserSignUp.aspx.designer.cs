@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace Store
+namespace Store.HomePage
 {
     public partial class UserSignUp
     {

@@ -167,6 +167,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HomePage\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HomePage\HomePage.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2292,10 +2299,12 @@
     <Content Include="FontAwesome\fontawesome-free-6.2.1-web\svgs\solid\z.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="HomePage\AdminLogin.aspx" />
     <Content Include="HomePage\HomePage.aspx" />
     <Content Include="HomePage\UserSignUp.aspx" />
     <Content Include="HomePage\UsersLogin.aspx" />
     <Content Include="Imgs\template10.jpg" />
+    <Content Include="Imgs\template11.jpg" />
     <Content Include="Imgs\Template2.png" />
     <Content Include="Imgs\template3.jpg" />
     <Content Include="Imgs\template4.jpg" />
