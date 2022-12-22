@@ -86,18 +86,27 @@
                             <center>
                                <div class="form-group">
                                 <asp:TextBox CssClass="form-control" ID="TextBox8"
-                                    runat="server" placeholder="Email Address"></asp:TextBox><br />
+                                    runat="server" placeholder="City "></asp:TextBox><br />
                                    </div>
                             </div>
                         <div class="col-md-4">
                             <center>
                                <div class="form-group">
                                 <asp:TextBox CssClass="form-control" ID="TextBox9"
-                                    runat="server" placeholder="Email Address"></asp:TextBox><br />
+                                    runat="server" placeholder="Pin Code" TextMode="Number"></asp:TextBox><br />
                                    </div>
                             </div>
                         </div>
-
+                    <div class="row">
+                        <div class="col">
+                            <center>
+                              <div class="form-group">
+                                <asp:TextBox CssClass="form-control" ID="TextBox7"
+                                    runat="server" placeholder="Full Address" TextMode="MultiLine" Rows="2"></asp:TextBox><br>
+                            </div>
+                            </center>
+                        </div>
+                        </div>
 
                     <div class="row">
                         <div class="col">
